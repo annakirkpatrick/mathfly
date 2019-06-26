@@ -271,7 +271,7 @@
 "typewriter"                          = "matttt"
 "blackboard"                          = "mathbb"
 "fraktur"                             = "mathfrak"
-"calligraphic"                        = "mathcal"
+"calligraphy"                        = ["mathcal", "1"]
 "formal script"                       = "mathscr"
 "normal text mode"                    = "textrm"
 #
