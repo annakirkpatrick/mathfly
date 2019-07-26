@@ -1,14 +1,8 @@
 '''
 Created on Sep 4, 2018
-
 @author: Mike Roberts
 '''
-from dragonfly import Function, Choice, Repeat, Clipboard
-
-from mathfly.lib.actions import Text, Key, Mouse, AppContext
-from mathfly.lib import control, utilities, execution
-from mathfly.lib.merge.mergerule import MergeRule
-from mathfly.lib.latex import tex_funcs
+from mathfly.imports import *
 
 BINDINGS = utilities.load_toml_relative("config/latex.toml")
 CORE = utilities.load_toml_relative("config/core.toml")
@@ -58,9 +52,8 @@ class LaTeX(MergeRule):
         BINDINGS["symbol_prefix"] + " <symbol>":
             Function(tex_funcs.symbol),
         BINDINGS["symbol_prefix"] + " <misc_symbol>":
-            Function(lambda misc_symbol: execution.alternating_command(misc_symbol)),
-        # "<latex_misc>":
-            # Function(lambda latex_misc: execution.alternating_command(latex_misc)),
+            Alternating("misc_symbol"),
+
         BINDINGS["accent_prefix"] + " <accent>":
             Function(lambda accent: execution.paren_function("\\" + accent, "{", "}")),
 
@@ -71,6 +64,8 @@ class LaTeX(MergeRule):
             Function(lambda command: execution.paren_function("\\" + command, "{", "}")),
         BINDINGS["command_prefix"] + " <commandnoarg>":
             Text("\\%(commandnoarg)s "),
+        BINDINGS["command_prefix"] + " <commandmisc>":
+            Alternating("commandmisc"),
 
         BINDINGS["command_prefix"] + " my (bib resource | bibliography)":
             Function(lambda: tex_funcs.back_curl("addbibresource", BINDINGS["bibliography_path"])),
@@ -90,8 +85,9 @@ class LaTeX(MergeRule):
         Choice("misc_symbol", BINDINGS["misc_symbols"]),
         # Choice("latex_misc",BINDINGS["latex_misc"]),
         Choice("accent",      BINDINGS["accents"]),
-        Choice("commandnoarg",BINDINGS["commandnoarg"]),
         Choice("command",     BINDINGS["command"]),
+        Choice("commandnoarg",BINDINGS["commandnoarg"]),
+        Choice("commandmisc", BINDINGS["commandmisc"]),
         Choice("environment", BINDINGS["environments"]),
         ]
     defaults = {
