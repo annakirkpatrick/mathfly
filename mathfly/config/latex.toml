@@ -71,6 +71,12 @@
 "verbatim"                    = "verbatim"
 "verse"                       = "verse"
 "wrap figure"                 = "wrapfigure"
+# nonstandard theorem environments for Anna
+"claim"                       = "claim"
+"observation"                 = "observation"
+"proposition"                 = "proposition"
+"lemma"                       = "lemma"
+"corollary"                   = "corollary"
 
 
 [command]
