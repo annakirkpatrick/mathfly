@@ -210,6 +210,7 @@
 "(big direct product | big oh times)" = "bigotimes"
 "plus or minus"                       = "pm"
 "partial"                             = "partial"
+"probability"                         = ["Prob", "1"]
 #
 "fraction"                            = ["frac", "2"]
 "unit"                                = "unitone"
@@ -256,7 +257,6 @@
 "max"                                 = "max"
 "min"                                 = "min"
 "prime"						 = "prime"
-"probability"                         = "Pr"
 # relations
 "[is] not equal [to]"                 = "neq"
 "[is] greater [than] [or] equal [to]" = "geq"
