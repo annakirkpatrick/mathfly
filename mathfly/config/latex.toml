@@ -65,6 +65,7 @@
 "quotation"                   = "quotation"
 "quote"                       = "quote"
 "split"                       = "split"
+"solution"                    = "solution"
 "table"                       = ["table", "[h!]\n\\centering"]
 "long table"                  = ["longtable", "{lll}"]
 "tabular"                     = ["tabular", "{llll}"]
