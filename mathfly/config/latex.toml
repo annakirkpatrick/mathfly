@@ -267,7 +267,7 @@
 "preference greater equals"           = "succeq"
 "negated"                             = "not"
 # sets
-"subset"                              = "subset"
+"subset"                              = "subseteq"
 "superset"                            = "supset"
 "strict subset"                       = "subsetneq"
 "strict superset"                     = "supsetneq"
