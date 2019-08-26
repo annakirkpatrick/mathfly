@@ -98,6 +98,7 @@
 "paragraph"                   = "paragraph"
 "paren cite"                  = "parencite"
 "part"                        = "part"
+"problem"                     = "problem"
 "reference"                   = "ref"
 "renew command"               = "renewcommand"
 "sub paragraph"               = "subparagraph"
