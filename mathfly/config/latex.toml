@@ -265,6 +265,7 @@
 "preference less equals"              = "preceq"
 "preference greater [than]"           = "succ"
 "preference greater equals"           = "succeq"
+"negated"                             = "not"
 # sets
 "subset"                              = "subset"
 "superset"                            = "supset"
