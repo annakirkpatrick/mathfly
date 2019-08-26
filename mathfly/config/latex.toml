@@ -181,7 +181,9 @@
 "(parens | parentheses)"    = ["\\left(  \\right) ", "left:9"]
 "square brackets"           = ["\\left[  \\right] ", "left:9"]
 "(curly brackets | braces)" = ["\\left\\{  \\right\\} ", "left:9"]
-"cardinality bars"          = ["\\left|  \\right| ", "left:9"]
+"(cardinality bars | absolute value)" = ["\\left|  \\right| ", "left:9"]
+"floor"                     = ["\\left\\lfloor  \\right\\rfloor", "left:14"]
+"ceiling"                   = ["\\left\\lceil  \\right\\rceil", "left:13"]
 
 # if included, a number as the second element in a list
 # puts that number of curly braces after the command, e.g.
@@ -309,9 +311,14 @@
 "horizontal dots"                     = "cdots"
 "vertical dots"                       = "vdots"
 "low dots"                            = "ldots"
-#
-"left invisible delimiter"            = "left."
-"right invisible delimiter"           = "right."
+# note: individual right and left delimiters are needed for things like equations across multiple lines and open/closed interval notation. --Anna
+# open and close used instead of left and right to avoid conflict with navigation commands
+"invisible delimiter open"            = "left."
+"invisible delimiter close"           = "right."
+"paren delimiter close"               = "right)"
+"paren delimiter open"                = "left("
+"square bracket delimiter close"      = "right]"
+"square bracket delimiter open"       = "left["
 #
 "text"                                = ["text", "1"]
 #
@@ -325,6 +332,7 @@
 "dot"        = "dot"
 "ddot"       = "ddot"
 "hat"        = "hat"
+"over line"  = "overline"
 "wide hat"   = "widehat"
 "tilde"      = "tilde"
 "wide tilde" = "widetilde"
