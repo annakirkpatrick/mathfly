@@ -43,6 +43,7 @@
 [environments]
 "abstract"                    = "abstract"
 "add margin"                  = "addmargin"
+"align"                       = "align"
 "center"                      = "center"
 "columns"                     = "columns"
 "column"                      = ["column", "{0.5\\textwidth}"]
@@ -65,6 +66,7 @@
 "quotation"                   = "quotation"
 "quote"                       = "quote"
 "split"                       = "split"
+"solution"                    = "solution"
 "table"                       = ["table", "[h!]\n\\centering"]
 "long table"                  = ["longtable", "{lll}"]
 "tabular"                     = ["tabular", "{llll}"]
@@ -134,6 +136,7 @@
 "no indent"          = "noindent"
 "page break"         = "pagebreak"
 "print bibliography" = "printbibliography"
+"question"           = "question"
 "table of contents"  = "tableofcontents"
 "tech"               = "TeX~ "
 "text backslash"     = "textbackslash"
@@ -208,6 +211,7 @@
 "(big direct product | big oh times)" = "bigotimes"
 "plus or minus"                       = "pm"
 "partial"                             = "partial"
+"probability"                         = ["Prob", "1"]
 #
 "fraction"                            = ["frac", "2"]
 "unit"                                = "unitone"
@@ -254,7 +258,6 @@
 "max"                                 = "max"
 "min"                                 = "min"
 "prime"						 = "prime"
-"probability"                         = "Pr"
 # relations
 "[is] not equal [to]"                 = "neq"
 "[is] greater [than] [or] equal [to]" = "geq"
@@ -265,8 +268,9 @@
 "preference less equals"              = "preceq"
 "preference greater [than]"           = "succ"
 "preference greater equals"           = "succeq"
+"negated"                             = "not"
 # sets
-"subset"                              = "subset"
+"subset"                              = "subseteq"
 "superset"                            = "supset"
 "strict subset"                       = "subsetneq"
 "strict superset"                     = "supsetneq"
@@ -311,9 +315,14 @@
 "horizontal dots"                     = "cdots"
 "vertical dots"                       = "vdots"
 "low dots"                            = "ldots"
-#
-"left invisible delimiter"            = "left."
-"right invisible delimiter"           = "right."
+# note: individual right and left delimiters are needed for things like equations across multiple lines and open/closed interval notation. --Anna
+# open and close used instead of left and right to avoid conflict with navigation commands
+"invisible delimiter open"            = "left."
+"invisible delimiter close"           = "right."
+"paren delimiter close"               = "right)"
+"paren delimiter open"                = "left("
+"square bracket delimiter close"      = "right]"
+"square bracket delimiter open"       = "left["
 #
 "text"                                = ["text", "1"]
 #
@@ -327,6 +336,7 @@
 "dot"        = "dot"
 "ddot"       = "ddot"
 "hat"        = "hat"
+"over line"  = "overline"
 "wide hat"   = "widehat"
 "tilde"      = "tilde"
 "wide tilde" = "widetilde"
