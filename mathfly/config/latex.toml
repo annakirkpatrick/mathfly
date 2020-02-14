@@ -214,6 +214,7 @@
 "plus or minus"                       = "pm"
 "partial"                             = "partial"
 "probability"                         = ["Prob", "1"]
+"gradient"                            = "nabla"
 #
 "fraction"                            = ["frac", "2"]
 "unit"                                = "unitone"
