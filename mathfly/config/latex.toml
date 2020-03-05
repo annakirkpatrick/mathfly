@@ -84,6 +84,8 @@
 "corollary"                   = "corollary"
 
 
+
+
 [command]
 "author"                      = "author"
 "[add] bib resource"          = "addbibresource"
@@ -122,6 +124,10 @@
 "(umlaut | dieresis)"         = "\""
 "(tilde | squiggle)"          = "~"
 "(macron | bar)"              = "="
+
+
+
+
 
 [commandnoarg]
 "centering"          = "centering"
@@ -205,6 +211,7 @@
 "C dot"                               = "cdot"
 "summation"                           = "sum"
 "product"                             = "prod"
+"exponential"                         = ["exp", "1"]             
 "(direct sum | oh plus)"              = "oplus"
 "(big direct sum | big oh plus)"      = "bigoplus"
 "(direct product | oh times)"         = "otimes"
@@ -328,6 +335,12 @@
 #
 "sub stack"                           = ["substack", "1"]
 
+#moderncv macros
+"CV item" 	= ["cvitem", "2"]
+"CV double item" = ["cvdoubleitem", "4"]
+"CV list item" = ["cvlistitem", "1"]
+"CV list double item" = ["cvlistdoubleitem", "2"]
+"CV entry" = ["cventry", "6"]
 
 [accents]
 "bar"        = "bar"
