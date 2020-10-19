@@ -319,6 +319,8 @@
 "up arrow"                            = "uparrow"
 "down arrow"                          = "downarrow"
 "left right arrow"                    = "leftrightarrow"
+"extended right arrow"                = ["xrightarrow[]", "1"] #uses mathtools package
+"extended left arrow"                = ["xleftarrow[]", "1"] #uses mathtools package
 #
 "dots"                                = "dots"
 "diagonal dots"                       = "ddots"
