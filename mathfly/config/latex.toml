@@ -361,6 +361,9 @@
 "wide tilde" = "widetilde"
 "vector"     = "vec"
 
+#custom macros
+"taxicab norm"   = "OneNorm"
+"Euclidean norm"  = "TwoNorm"
 
 # These are longer and are pasted in rather than being executed
 # as keystrokes. Add as many as you like.
